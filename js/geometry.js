@@ -53,3 +53,27 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
     // set value
     createAriaCalculationElement("Rhombus", area);
 })
+
+// for pentagon
+document.getElementById('pentagon-btn').addEventListener('click', function () {
+    const pentagonTextInputP = getTextElementValue('pentagon-text-value-p');
+    const pentagonTextInputB = getTextElementValue('pentagon-text-value-b');
+
+    // calculation
+    const area = 0.5 * pentagonTextInputB * pentagonTextInputP;
+
+    // set value
+    createAriaCalculationElement("Pentagon", area);
+})
+
+// for ellipse
+document.getElementById('ellipse-btn').addEventListener('click', function () {
+    const ellipseTextInputA = getTextElementValue('ellipse-text-value-a');
+    const ellipseTextInputB = getTextElementValue('ellipse-text-value-b');
+
+    // calculation
+    const area = 3.1416 * ellipseTextInputA * ellipseTextInputB;
+
+    // set value
+    createAriaCalculationElement("Ellipse", area);
+})
