@@ -28,7 +28,7 @@ body {
     margin: 0;
 }
 
-/* for head sections button */
+/* styles for head sections button */
 .btn-blog {
     font-size: 20px;
     font-weight: 700;
@@ -38,4 +38,65 @@ body {
     height: 45px;
     border: none;
     border-radius: 8px;
+}
+
+/* styles for main section */
+/* for main container */
+.main-container {
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+}
+
+.main-container-single {
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 8px;
+    width: 437px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* input field styles */
+.input-field {
+    width: 95px;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F1F1F1;
+}
+
+.subject-heading {
+    color: #414141;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.calculation-rules {
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+
+/* text value styles */
+.text-value {
+    display: inline-block;
+    margin: 0;
+    padding: 0 9px;
+}
+
+.calculate-button {
+    margin-top: 50px;
+    width: 350px;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    background: #1090D8;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
 }
