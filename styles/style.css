@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+/* styles for head */
+.head-container {
+    margin: 50px;
+    background-color: rgba(16, 144, 216, 0.10);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 50px 19px 42px;
+}
+
+/* styles for head sections heading */
+.interactive-heading {
+    font-size: 45px;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 0.80);
+    margin: 0;
+}
+
+.geometry-heading {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(17, 17, 17, 0.60);
+    margin: 0;
+}
+
+/* for head sections button */
+.btn-blog {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #1090D8;
+    color: white;
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+}
