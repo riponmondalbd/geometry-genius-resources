@@ -25,46 +25,47 @@
         <div class="main-container">
 
             <!-- for triangle -->
-            <div class="main-container-single single-1">
+            <div class="main-container-single hover-element single-1">
                 <img src="images/triangle.png" alt="triangle">
-                <h3 class="subject-heading">Triangle</h3>
+                <h3 id="heading" class="subject-heading">Triangle</h3>
 
                 <p class="calculation-rules">Area (A) = 0.5 x b x h</p>
 
-                <input class="input-field" type="text" placeholder="b">
+                <input id="triangle-input-field-b" class="input-field" type="text" placeholder="b">
                 <p class="text-value"> cm </p>
-                <input class="input-field" type="text" placeholder="h">
+                <input id="triangle-input-field-h" class="input-field" type="text" placeholder="h">
                 <p class="text-value"> cm </p>
 
                 <br>
 
-                <button class="calculate-button">Calculate</button>
+                <button id="triangle-calculate-btn" class="calculate-button">Calculate</button>
             </div>
 
             <!-- for rectangle -->
-            <div class="main-container-single single-2">
+            <div class="main-container-single hover-element single-2">
                 <img src="images/rectangle.png" alt="rectangle">
                 <h3 class="subject-heading">Rectangle</h3>
 
                 <p class="calculation-rules">Area (A) = w x l</p>
 
-                <input class="input-field" type="text" placeholder="w">
+                <input id="rectangle-input-field-w" class="input-field" type="text" placeholder="w">
                 <p class="text-value"> cm </p>
-                <input class="input-field" type="text" placeholder="l">
+                <input id="rectangle-input-field-l" class="input-field" type="text" placeholder="l">
                 <p class="text-value"> cm </p>
 
                 <br>
 
-                <button class="calculate-button">Calculate</button>
+                <button id="rectangle-calculate-button" class="calculate-button">Calculate</button>
             </div>
 
             <!-- for parallelogram -->
-            <div class="main-container-single single-3">
+            <div class="main-container-single hover-element single-3">
                 <img src="images/parallelogram.png" alt="parallelogram">
                 <h3 class="subject-heading">Parallelogram</h3>
 
                 <p class="calculation-rules">Area (A) = b x h</p>
-                <p class="calculation-value">b = 10cm, h = 12cm</p>
+                <p class="calculation-value">b = <span id="parallelogram-text-value-b">10</span>cm, h = <span
+                        id="parallelogram-text-value-h">12</span>cm</p>
 
                 <div class="input-aria">
                     <input class="input-field" type="text" placeholder="b">
@@ -73,16 +74,21 @@
                     <p class="text-value"> cm </p>
                 </div>
 
-                <button class="calculate-button">Calculate</button>
+                <button id="parallelogram-btn" class="calculate-button">Calculate</button>
             </div>
 
             <!-- for Aria Calculation -->
             <div class="main-container-single single-4">
                 <h3 class="aria-calculation-heading">Area Calculation</h3>
+                <div>
+                    <ol id="area-calculation">
+
+                    </ol>
+                </div>
             </div>
 
             <!-- for rhombus -->
-            <div class="main-container-single single-5">
+            <div class="main-container-single hover-element single-5">
                 <img src="images/rhombus.png" alt="rhombus">
                 <h3 class="subject-heading">Rhombus</h3>
 
@@ -100,7 +106,7 @@
             </div>
 
             <!-- for pentagon -->
-            <div class="main-container-single single-6">
+            <div class="main-container-single hover-element single-6">
                 <img src="images/pentagon.png" alt="pentagon">
                 <h3 class="subject-heading">Pentagon</h3>
 
@@ -118,7 +124,7 @@
             </div>
 
             <!-- for ellipse -->
-            <div class="main-container-single single-7">
+            <div class="main-container-single hover-element single-7">
                 <img src="images/ellipse.png" alt="ellipse">
                 <h3 class="subject-heading">Ellipse</h3>
 
@@ -136,6 +142,9 @@
             </div>
         </div>
     </main>
+    <!-- add script -->
+    <script src="js/utility.js"></script>
+    <script src="js/geometry.js"></script>
 </body>
 
 </html>
