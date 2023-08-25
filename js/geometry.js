@@ -41,3 +41,15 @@ document.getElementById('parallelogram-btn').addEventListener('click', function 
     // set value
     createAriaCalculationElement("Parallelogram", area);
 })
+
+// for rhombus
+document.getElementById('rhombus-btn').addEventListener('click', function () {
+    const rhombusTextInputD1 = getTextElementValue('rhombus-text-value-d1');
+    const rhombusTextInputD2 = getTextElementValue('rhombus-text-value-d2');
+
+    // calculation
+    const area = 0.5 * rhombusTextInputD1 * rhombusTextInputD2;
+
+    // set value
+    createAriaCalculationElement("Rhombus", area);
+})
